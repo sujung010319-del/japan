@@ -1,17 +1,22 @@
-구분,연도,항목,값,단위,증감률(%),출처
-글로벌,2024,반도체 장비 총매출,1170,억달러,,SEMI(역산)
-글로벌,2025,반도체 장비 총매출,1330,억달러,13.7,SEMI 2025.12 전망
-글로벌,2026,반도체 장비 총매출,1450,억달러,9.0,SEMI 2025.12 전망
-글로벌,2027,반도체 장비 총매출,1560,억달러,7.6,SEMI 2025.12 전망(사상 첫 1500억달러 돌파)
-전공정,2024,웨이퍼팹장비(WFE),1040,억달러,,SEMI
-전공정,2025,웨이퍼팹장비(WFE),1157,억달러,11.0,SEMI
-전공정,2026,웨이퍼팹장비(WFE),1261,억달러,9.0,SEMI(증가율 기준 산출)
-전공정,2027,웨이퍼팹장비(WFE),1352,억달러,7.3,SEMI
-파운드리·로직,2026,장비 매출,666,억달러,,SEMI
-파운드리·로직,2027,장비 매출,752,억달러,,SEMI
-후공정,2025,테스트 장비,112,억달러,48.1,SEMI
-후공정,2025,조립·패키징 장비,,,19.6,SEMI
-지역,2025,한국 팹 장비 투자,215,억달러,29,SEMI(글로벌 2위)
-지역,2026,한국 팹 장비 투자,270,억달러,26,SEMI(글로벌 2위)
-지역,2026-2028,한국 팹 장비 투자 합계,860,억달러,,SEMI(글로벌 2위)
-지역,2026-2028,글로벌 300mm 팹 장비 투자,3740,억달러,,SEMI
+구분,연도,항목,값,증감률,출처_매체,기사일자,출처_URL
+글로벌 전망,2026,반도체 장비 총매출,1659억달러(약 229조7000억원),+23.2%,디지털데일리(SEMI 년중 전망),2026-07-21,https://www.ddaily.co.kr/page/view/2026072110450720403
+글로벌 전망,2028,반도체 장비 총매출,2295억달러(약 317조8000억원),5년 연속 성장·사상 최대,디지털데일리(SEMI 년중 전망),2026-07-21,https://www.ddaily.co.kr/page/view/2026072110450720403
+전공정,2025,웨이퍼팹장비(WFE),1169억달러,,디지털데일리(SEMI),2026-07-21,https://www.ddaily.co.kr/page/view/2026072110450720403
+전공정,2026,웨이퍼팹장비(WFE),1439억달러,+23.1%,디지털데일리(SEMI),2026-07-21,https://www.ddaily.co.kr/page/view/2026072110450720403
+전공정,2027,웨이퍼팹장비(WFE),-,+21.8%,디지털데일리(SEMI),2026-07-21,https://www.ddaily.co.kr/page/view/2026072110450720403
+전공정,2028,웨이퍼팹장비(WFE),2000억달러 돌파,+14.1%,디지털데일리(SEMI),2026-07-21,https://www.ddaily.co.kr/page/view/2026072110450720403
+메모리,2026,D램 장비 매출,388억달러,+39.0%,디지털데일리(SEMI),2026-07-21,https://www.ddaily.co.kr/page/view/2026072110450720403
+메모리,2026,낸드 장비 매출,139억달러,+30.7%,디지털데일리(SEMI),2026-07-21,https://www.ddaily.co.kr/page/view/2026072110450720403
+후공정,2026,테스트 장비 매출,153억달러,+31.0%,디지털데일리(SEMI),2026-07-21,https://www.ddaily.co.kr/page/view/2026072110450720403
+후공정,2028,테스트 장비 매출,208억달러,,디지털데일리(SEMI),2026-07-21,https://www.ddaily.co.kr/page/view/2026072110450720403
+후공정,2026,조립·패키징 장비 매출,67억달러,+9.6%,디지털데일리(SEMI),2026-07-21,https://www.ddaily.co.kr/page/view/2026072110450720403
+후공정,2028,조립·패키징 장비 매출,86억달러,,디지털데일리(SEMI),2026-07-21,https://www.ddaily.co.kr/page/view/2026072110450720403
+지역,2028,투자 상위 3개국,중국·대만·한국,지위 유지,디지털데일리(SEMI),2026-07-21,https://www.ddaily.co.kr/page/view/2026072110450720403
+글로벌 실적,2025,반도체 장비 빌링스(실적),1350억달러,+15%,SEMI 보도자료,2026,https://www.semi.org/en/SEMI-Reports-Global-Semiconductor-Equipment-Billings-Reached-135-Billion-in-2025
+글로벌 실적,2026Q1,반도체 장비 빌링스(실적),365.5억달러,+14% YoY·분기 사상 최대,SEMI 보도자료,2026-06,https://www.semi.org/en/semi-press-release/semi-reports-global-semiconductor-equipment-billings-increased-14-percent-year-over-year-in-q1-2026
+지역 실적,2026Q1,중국 장비 빌링스,109.9억달러,-16% QoQ / +7% YoY,TelecomLead(SEMI 인용),2026-06,https://telecomlead.com/semiconductor/global-semiconductor-equipment-market-reaches-record-36-55-bn-in-q1-2026-semi-126159
+지역 실적,2026Q1,한국 장비 빌링스,89.3억달러,+26% QoQ / +16% YoY,TelecomLead(SEMI 인용),2026-06,https://telecomlead.com/semiconductor/global-semiconductor-equipment-market-reaches-record-36-55-bn-in-q1-2026-semi-126159
+지역 실적,2026Q1,대만 장비 빌링스,87.7억달러,+18% QoQ / +24% YoY,TelecomLead(SEMI 인용),2026-06,https://telecomlead.com/semiconductor/global-semiconductor-equipment-market-reaches-record-36-55-bn-in-q1-2026-semi-126159
+한국 투자,2025,한국 팹 장비 투자,233억달러,,뉴스N연합,2026,https://newsyonhap.com/news/108706
+한국 투자,2026,한국 팹 장비 투자,297억달러(약 42조원),+27.2%·대만 제치고 세계 2위,뉴스N연합,2026,https://newsyonhap.com/news/108706
+글로벌 투자,2026,글로벌 팹 장비 투자,1300억달러,+18%,뉴스N연합,2026,https://newsyonhap.com/news/108706
