@@ -1,0 +1,108 @@
+# S&P 500 연도별 편입·편출 (2006–2026)
+
+2006년부터 2026년 8월까지 S&P 500 지수 구성종목 변경을 연도별 건수와 S&P Dow Jones Indices
+공식 보도자료 링크로 정리한 자료.
+
+## 파일
+
+| 파일 | 내용 |
+|---|---|
+| `annual_change_counts_2006_2026.csv` | 연도별 편입/편출 건수, 순증감, 변경 발생일 수, 연말 종목 수 |
+| `press_releases_2012_2026.csv` | S&P DJI 공식 보도자료 링크 (발표일·적용일·편입·편출·정기리밸런스 여부) |
+
+## 연도별 건수
+
+| 연도 | 편입 | 편출 | 순증감 | 변경일 수 | 연말 종목 수 |
+|---|---:|---:|---:|---:|---:|
+| 2006 | 32 | 32 | 0 | 24 | 497 |
+| 2007 | 38 | 38 | 0 | 37 | 497 |
+| 2008 | 35 | 34 | +1 | 36 | 498 |
+| 2009 | 29 | 28 | +1 | 24 | 499 |
+| 2010 | 14 | 16 | −2 | 15 | 497 |
+| 2011 | 19 | 19 | 0 | 19 | 497 |
+| 2012 | 18 | 18 | 0 | 19 | 497 |
+| 2013 | 19 | 19 | 0 | 18 | 497 |
+| 2014 | 16 | 14 | +2 | 15 | 499 |
+| 2015 | 30 | 27 | +3 | 30 | 502 |
+| 2016 | 31 | 27 | +4 | 32 | 506 |
+| 2017 | 27 | 28 | −1 | 24 | 505 |
+| 2018 | 24 | 24 | 0 | 25 | 505 |
+| 2019 | 29 | 29 | 0 | 22 | 505 |
+| 2020 | 20 | 20 | 0 | 13 | 505 |
+| 2021 | 21 | 21 | 0 | 14 | 505 |
+| 2022 | 22 | 24 | −2 | 19 | 503 |
+| 2023 | 19 | 19 | 0 | 14 | 503 |
+| 2024 | 20 | 20 | 0 | 14 | 503 |
+| 2025 | 21 | 21 | 0 | 16 | 503 |
+| 2026 (6/30까지) | 14 | 14 | 0 | 12 | 503 |
+
+2006–2025년 20년 합계: 편입 484건, 편출 478건 (연평균 약 24건).
+
+## 출처와 한계 — 반드시 읽을 것
+
+### 건수의 출처
+위 건수는 **S&P 공식 집계가 아니다.** S&P 500 구성종목 이력 데이터셋
+([fja05680/sp500](https://github.com/fja05680/sp500)의 `S&P 500 Historical Components &
+Changes (Updated).csv`, 1996-01-02 ~ 2026-06-30, 2,718행)의 날짜별 티커 리스트를
+인접 행끼리 diff 해서 센 값이다. 해당 데이터셋의 원 출처는 Andreas Clenow의
+『Trading Evolved』 부속 데이터(1996–2019) + 이후 위키피디아 "List of S&P 500 companies"
+변경 이력 수동 갱신이다.
+
+**티커 변경(사명 변경)이 편입 1 + 편출 1로 중복 집계되어 있다.** 최근 연도 기준 연 2~4건.
+예: 2024년 CDAY→DAY, PEAK→DOC, FLT→CPAY / 2025년 PARA→PSKY, FI→FISV /
+2026년 MMC→MRSH, SATS→ECHO. "실제 기업 교체" 기준으로는 그만큼 빼야 한다.
+2025년의 경우 공식 보도자료로 확인한 실질 건수는 편입·편출 각 19건이다(표의 21건 대비).
+
+### 공식 연도별 집계는 여기에 있다 (미확보)
+S&P Dow Jones Indices가 직접 집계한 1995–2021년 편입·편출 전수 데이터:
+- <https://www.spglobal.com/spdji/en/research/article/what-happened-to-the-index-effect-a-look-at-three-decades-of-sp-500-adds-and-drops/>
+- PDF: <https://www.spglobal.com/spdji/en/documents/research/research-what-happened-to-the-index-effect.pdf>
+
+이 문서를 확보하면 위 표의 2006–2021 구간을 공식 수치로 교체할 수 있다.
+
+### 보도자료 링크의 한계
+- **2006–2011년: 링크 없음.** press.spglobal.com 아카이브에 수록되어 있지 않다.
+  검색으로 확인된 가장 오래된 건이 2012-02-09.
+- **2012–2019년: 전건이 아님.** 연간 20건 안팎 중 3~7건만 수록. 아카이브
+  페이지네이션(`press.spglobal.com/index.php?s=2429&o=N`)을 직접 열지 못해
+  검색으로 잡힌 것만 모았다.
+- **2020–2026년: 사실상 전건.**
+- 티커 변경은 보도자료가 발행되지 않으므로 링크가 존재하지 않는다.
+
+### 교차 검증
+공식 보도자료 본문과 데이터셋 행이 일치함을 확인한 사례:
+
+| S&P 공식 발표 | 발표 내용 | 데이터셋 행 |
+|---|---|---|
+| 2025-08-25 | IBKR가 WBA 대체, 8/28 적용 | `2025-08-28 IN: IBKR / OUT: WBA` |
+| 2025-10-27 | SOLS가 KMX 대체, 10/31 적용 | `2025-10-30 IN: SOLS` / `10-31 OUT: KMX` |
+| 2025-11-24 | SNDK가 IPG 대체, 11/28 적용 | `2025-11-28 IN: SNDK / OUT: IPG` |
+| 2025-12-05 | CRH·CVNA·FIX 편입, 12/22 적용 | `2025-12-22 IN: CRH,CVNA,FIX` |
+
+연평균 24.2건은 통설인 연 4.4% 회전율(약 22건, [Winton](https://www.winton.com/news/the-hidden-costs-of-index-tracking))과도 부합한다.
+
+## 남은 작업
+
+`spglobal.com` / `press.spglobal.com` 도메인 접근이 가능한 환경에서:
+
+1. 공식 연구보고서 PDF를 파싱해 2006–2021 연도별 건수를 공식 수치로 교체
+2. press.spglobal.com 아카이브를 순회해 2012–2019 보도자료 링크 전건 확보
+3. 2020-03 정기 리밸런스, 2024년 수시 교체 일부(Smurfit Westrock, Amentum,
+   Texas Pacific Land 등) 링크 보완
+
+## 재현
+
+```bash
+curl -sSL -o sp500_hist.csv \
+  "https://raw.githubusercontent.com/fja05680/sp500/master/S%26P%20500%20Historical%20Components%20%26%20Changes%20(Updated).csv"
+python3 - <<'PY'
+import csv, collections
+rows = [(r['date'], set(t for t in r['tickers'].split(',') if t))
+        for r in csv.DictReader(open('sp500_hist.csv'))]
+add, rem = collections.Counter(), collections.Counter()
+for (_, s0), (d1, s1) in zip(rows, rows[1:]):
+    y = int(d1[:4]); add[y] += len(s1 - s0); rem[y] += len(s0 - s1)
+for y in range(2006, 2027):
+    print(y, add[y], rem[y])
+PY
+```
